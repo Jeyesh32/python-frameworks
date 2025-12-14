@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="nd-sdk",
-    version="1.1.13",
+    version="1.0.0",
     description="Unified SDK for Observability, Caching and Storage",
     author="Jeyesh Vishnu",
     author_email="jeyesh.vishnu@novacisdigital.com",
