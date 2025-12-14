@@ -1,0 +1,262 @@
+{
+  "ErrorCatalog": {
+    "StorageException": {
+      "S3_Upload_Failed": {
+        "Code": "IDP-E001",
+        "Message": "S3 upload failed. The object could not be uploaded to the bucket. Verify object path and upload permissions."
+      },
+      "S3_Client_Operation_Failed": {
+        "Code": "IDP-E002",
+        "Message": "S3 client operation failed. AWS client returned an error. Check credentials, bucket policy, and API response."
+      },
+      "Storage_Initialization_Failed": {
+        "Code": "IDP-E003",
+        "Message": "Storage initialization failed. Unable to initialize amazonStorage configuration or required resources."
+      },
+      "Bulk_Download_Failed": {
+        "Code": "IDP-E004",
+        "Message": "Bulk download failed. One or more files could not be downloaded from S3. Check file availability and bucket permissions."
+      },
+      "File_Download_Failed": {
+        "Code": "IDP-E005",
+        "Message": "File download failed. The target object could not be retrieved from S3. Verify object key and access policy."
+      },
+      "Bulk_Download_Local_Path_Failed": {
+        "Code": "IDP-E006",
+        "Message": "Bulk download to local path failed. A file could not be written or downloaded to the specified location."
+      },
+      "Download_As_Array_Failed": {
+        "Code": "IDP-E007",
+        "Message": "Download-as-array operation failed. The requested object array could not be fetched from S3."
+      },
+      "List_Files_Failed": {
+        "Code": "IDP-E008",
+        "Message": "Unable to list files. S3 object listing failed for the requested prefix. Check prefix and S3 permissions."
+      },
+      "File_Existence_Check_Failed": {
+        "Code": "IDP-E009",
+        "Message": "File existence check failed. Unable to verify whether the S3 object exists. Review bucket access and network."
+      },
+      "Blob_Service_Operation_Failed": {
+        "Code": "IDP-E010",
+        "Message": "Blob service operation failed. A storage action to blob client could not be completed. Inspect blob endpoint and credentials."
+      }
+    },
+
+    "FileSystemException": {
+      "File_Not_Found": {
+        "Code": "IDP-E011",
+        "Message": "Required file not found at the provided path."
+      }
+    },
+
+    "PermissionException": {
+      "Operation_Not_Permitted": {
+        "Code": "IDP-E012",
+        "Message": "Operation not permitted. Validate access control or process privileges."
+      }
+    },
+
+    "NetworkException": {
+      "HTTP_Request_Failed": {
+        "Code": "IDP-E013",
+        "Message": "HTTP request failed. Remote endpoint returned an error response. Check URL, credentials, or API availability."
+      },
+      "Network_Request_Failed": {
+        "Code": "IDP-E014",
+        "Message": "Network request failed. Unable to reach the service. Verify network connectivity and endpoint configuration."
+      }
+    },
+
+    "TimeoutException": {
+      "Operation_Timeout": {
+        "Code": "IDP-E015",
+        "Message": "Operation exceeded allowed time. Verify performance and network latency."
+      }
+    },
+
+    "DataParsingException": {
+      "JSON_Decode_Error": {
+        "Code": "IDP-E016",
+        "Message": "Invalid or unparseable input format encountered during JSON processing."
+      },
+      "Unicode_Decode_Error": {
+        "Code": "IDP-E017",
+        "Message": "Character encoding error encountered. Unable to decode bytes with specified encoding. Verify input encoding."
+      },
+      "Unicode_Encode_Error": {
+        "Code": "IDP-E018",
+        "Message": "Character encoding conversion failed. Unable to encode string to target encoding."
+      },
+      "Unpickling_Error": {
+        "Code": "IDP-E019",
+        "Message": "Deserialization failed. Unable to unpickle object. Verify pickle protocol and data integrity."
+      },
+      "YAML_Error": {
+        "Code": "IDP-E020",
+        "Message": "YAML parsing failed. Invalid YAML syntax or structure encountered. Review YAML formatting."
+      },
+      "CSV_Error": {
+        "Code": "IDP-E021",
+        "Message": "CSV processing error. Unable to parse or process CSV data. Check delimiter and format."
+      },
+      "XML_Parse_Error": {
+        "Code": "IDP-E022",
+        "Message": "XML parsing failed. Invalid XML structure or syntax encountered. Validate XML document."
+      }
+    },
+
+    "ProcessingException": {
+      "Python_Processing_Error": {
+        "Code": "IDP-E023",
+        "Message": "An unexpected error occurred in the processing service: {traceback error message}"
+      },
+      "Invalid_Value": {
+        "Code": "IDP-E024",
+        "Message": "Invalid value encountered during processing. Input data does not meet expected format or range requirements."
+      },
+      "Type_Mismatch": {
+        "Code": "IDP-E025",
+        "Message": "Type mismatch in processing operation. Expected type differs from provided type. Verify data types and conversions."
+      },
+      "Key_Not_Found": {
+        "Code": "IDP-E026",
+        "Message": "Required key not found in data structure. Missing expected field in dictionary or configuration."
+      },
+      "Index_Out_Of_Range": {
+        "Code": "IDP-E027",
+        "Message": "Index out of range during data access. Array or list index exceeds available elements."
+      },
+      "Attribute_Access_Failed": {
+        "Code": "IDP-E028",
+        "Message": "Attribute access failed. The requested object attribute does not exist or is inaccessible."
+      },
+      "Memory_Error": {
+        "Code": "IDP-E029",
+        "Message": "Insufficient memory to complete operation. Processing requires more memory than available. Consider batch processing or optimization."
+      },
+      "Numerical_Overflow": {
+        "Code": "IDP-E030",
+        "Message": "Numerical overflow encountered. Calculation result exceeds maximum representable value."
+      },
+      "Runtime_Error": {
+        "Code": "IDP-E031",
+        "Message": "Runtime processing error occurred. An unexpected state or condition was encountered during execution."
+      },
+      "Recursion_Error": {
+        "Code": "IDP-E032",
+        "Message": "Maximum recursion depth exceeded. Operation may contain infinite recursion or requires increased recursion limit."
+      },
+      "Iterator_Exhausted": {
+        "Code": "IDP-E033",
+        "Message": "Iterator exhausted unexpectedly. Iteration operation terminated before expected completion."
+      },
+      "Assertion_Failed": {
+        "Code": "IDP-E034",
+        "Message": "Assertion failed during processing. Internal validation check did not pass. Review processing logic."
+      },
+      "Import_Failed": {
+        "Code": "IDP-E035",
+        "Message": "Required module import failed. Dependency is missing or incorrectly configured. Verify installed packages."
+      },
+      "Module_Not_Found": {
+        "Code": "IDP-E036",
+        "Message": "Required module not found. Python module or package is not installed. Check dependencies and environment."
+      },
+      "Feature_Not_Implemented": {
+        "Code": "IDP-E037",
+        "Message": "Feature not implemented. The requested operation is not yet supported."
+      },
+      "System_Error": {
+        "Code": "IDP-E038",
+        "Message": "Internal system error encountered. Python interpreter reported an internal issue."
+      },
+      "Buffer_Error": {
+        "Code": "IDP-E039",
+        "Message": "Buffer operation failed. Unable to perform buffer-related operation."
+      },
+      "End_Of_File": {
+        "Code": "IDP-E040",
+        "Message": "Unexpected end of file reached. Input stream ended prematurely during read operation."
+      },
+      "Lookup_Error": {
+        "Code": "IDP-E041",
+        "Message": "Lookup operation failed. Unable to find requested item in collection or mapping."
+      },
+      "User_Interrupted": {
+        "Code": "IDP-E042",
+        "Message": "Processing interrupted by user. Operation was manually cancelled."
+      },
+      "System_Exit": {
+        "Code": "IDP-E043",
+        "Message": "System exit requested. Processing terminated with exit signal."
+      },
+      "Generator_Exit": {
+        "Code": "IDP-E044",
+        "Message": "Generator closed unexpectedly. Generator function terminated before completion."
+      },
+      "Reference_Error": {
+        "Code": "IDP-E045",
+        "Message": "Weak reference error. Referenced object no longer exists or has been garbage collected."
+      }
+    },
+
+    "MathOperationException": {
+      "Division_By_Zero": {
+        "Code": "IDP-E046",
+        "Message": "Invalid arithmetic operation encountered during processing."
+      },
+      "Floating_Point_Error": {
+        "Code": "IDP-E047",
+        "Message": "Floating-point operation failed. Invalid mathematical operation on floating-point numbers."
+      },
+      "Arithmetic_Error": {
+        "Code": "IDP-E048",
+        "Message": "Arithmetic operation error. General mathematical calculation failure encountered."
+      }
+    },
+
+    "InitializationException": {
+      "Service_Initialization_Failed": {
+        "Code": "IDP-E049",
+        "Message": "Service initialization failed. Validate configuration and startup dependencies."
+      }
+    },
+
+    "ConcurrencyException": {
+      "Threading_Error": {
+        "Code": "IDP-E050",
+        "Message": "Threading operation failed. Error in thread creation or management. Review concurrency implementation."
+      },
+      "Multiprocessing_Error": {
+        "Code": "IDP-E051",
+        "Message": "Multiprocessing operation failed. Error in process creation or inter-process communication."
+      }
+    },
+
+    "DataValidationException": {
+      "Validation_Failed": {
+        "Code": "IDP-E052",
+        "Message": "Data validation failed. Input does not conform to required schema or constraints."
+      }
+    },
+
+    "ResourceException": {
+      "OS_Error": {
+        "Code": "IDP-E053",
+        "Message": "Operating system error occurred. System-level operation failed. Check system resources and permissions."
+      },
+      "IO_Error": {
+        "Code": "IDP-E054",
+        "Message": "Input/output operation failed. Unable to read from or write to resource. Verify file handles and paths."
+      }
+    },
+
+    "HandledExceptionWarning": {
+      "Internal_Error_Handled": {
+        "Code": "IDP-W001",
+        "Message": "Error was handled internally. Add warning log entry for observability."
+      }
+    }
+  }
+}
